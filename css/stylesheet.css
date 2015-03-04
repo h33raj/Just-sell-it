@@ -1,0 +1,39 @@
+
+.main {
+    margin-top:30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 6px;
+    -moz-box-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 18px black;
+    box-shadow: 1 1 2px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+
+}
+
+.second {
+    display:inline-block;
+    -moz-box-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 18px black;
+    box-shadow: 1 1 2px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    width: 100%;
+    padding: 30px 50px;
+}
+.third {
+    display:inline-block;
+    -moz-box-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 18px black;
+    box-shadow: 1 1 2px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    width: 100%;
+    
+    
+}

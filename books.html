@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="books.css">	
+</head>
+<style>
+body {
+    background-color: #90EE90;
+}
+
+h1{
+    color: #000000;
+    text-align: center;
+    font-weight:bold;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $('#c').fadeOut(1000);
+    $("b").click(function(){
+     $("c").slideDown();	
+	});
+    });
+});
+</script>
+</script> </head>
+<body>
+<a href="main.html">
+    <img src="img/back.png" style="float:left;" height="50" width="50">
+  </a>
+
+<br>
+<br>
+<div class="a" align='center'>
+<button type="button" class="btn btn-danger btn-block">Books</button>
+</div>
+<br>
+<div class="b">
+<button id=b1 type="button" class="btn btn-primary btn-block">Engineering</button>
+</div>
+<div class="c">
+<p><ol>	
+<form action="books.php" method="post">
+<button type="submit" class="btn btn-primary btn-block" name="sub" value="MEC">MEC</button>
+<button type="submit" class="btn btn-primary btn-block" name="sub" value="CSE">CSE</button>
+<button type="submit" class="btn btn-primary btn-block" name="sub" value="EEE">EEE</button>
+<button type="submit" class="btn btn-primary btn-block" name="sub" value="ECE">ECE</button>
+</form>
+</ol></p>
+</div>
+<div class="d">
+<button id=b2 type="button" class="btn btn-success btn-block">Arts</button>
+</div>
+<div class="e">
+<p><ol>
+<form action="books.php" method="post">
+<button type="submit" class="btn btn-success btn-block" name="sub" value="BCA">BCA</button>
+<button type="submit" class="btn btn-success btn-block" name="sub" value="BCOM">BCOM</button>
+<button type="submit" class="btn btn-success btn-block" name="sub" value="BBA">BBA</button>
+<button type="submit" class="btn btn-success btn-block" name="sub" value="BBM">BBM</button>
+</form>
+</ol></p>
+</div>
+</form>
+</body>
+</html>
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Post Add</title>
+  
+  <script type="text/javascript" src="./post_ad_files/dummy.js"></script>
+  
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="./post_ad_files/result-light.css">
+  
+  <style type="text/css">
+    
+  </style>
+  
+
+
+<script type="text/javascript">//<![CDATA[ 
+window.onload=function(){
+$(document).ready(function() {
+$("#select_1").on('change',function(){
+    if($("#select_1").prop("selectedIndex")==1){
+        $('#select_3 option').show(); 
+        $('#select_3 option:gt(8)').hide(); 
+        
+    }else if($("#select_1").prop("selectedIndex")==2){
+     $('#select_3 option').show(); 
+     $('#select_3 option:lt(9)').hide();   
+     $('#select_3 option:gt(11)').hide();   
+    }else if($("#select_1").prop("selectedIndex")==3){
+     $('#select_3 option').show(); 
+     $('#select_3 option:lt(12)').hide();   
+     $('#select_3 option:gt(12)').show();
+    }
+});
+});
+}//]]>  
+
+</script>
+
+
+<script src="http://debug.phonegap.com/target/target-script-min.js#jsf_wmw"></script></head>
+<body>
+  
+
+
+  <title>postad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript">
+
+</script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="./post_ad_files/jquery.min.js"></script>
+  <script src="./post_ad_files/bootstrap.min.js"></script>
+<style>
+body {
+    background-color: #90EE90;
+}
+
+h1{
+    color: #000000;
+    text-align: center;
+    font-weight:bold;
+}
+</style>
+<script src="http://debug.phonegap.com/target/target-script-min.js#jsf_wmw"></script>
+
+
+<div class="container">
+  <h2>Post Ad</h2>
+  <form role="form" enctype="multipart/form-data" action="upload.php" method="post">
+    <div class="form-group">
+      <label for="text">Name:</label>
+      <input type="Text" class="form-control" id="name" name="name" placeholder="Enter Name">
+    </div>
+    <div class="form-group">
+      <label for="text">Rollno:</label>
+      <input type="text" class="form-control" id="rollno" name="rollno" value="AM.EN." placeholder="Enter Rollno">
+    </div>
+    <div class="form-group">
+      <label for="text">Phone no:</label>
+      <input type="text" class="form-control" id="phoneno" name="phoneno" placeholder="Enter Phone no">
+    </div>
+    <div class="form-group">
+      <label for="sel1">Product:</label>
+      
+      <select class="form-control" id="select_1" name="product">
+  <option selected="selected" value="" name="product"> Select Item </option>
+  <option value="BOOKS"> Books </option>
+  <option value="VEHICLES"> Vehicles </option>
+  <option value="STATIONERY ITEMS"> Stationery items </option>
+</select>
+
+<br>
+
+<select class="form-control" id="select_3" name="cat">
+  <option selected="selected" value=""> Choose Category </option>
+
+  <option value="CSE">CSE</option>
+  <option value="MEC">MEC</option>
+  <option value="EEE">EEE</option>
+    <option value="ECE">ECE</option>
+    <option value="BCA">BCA</option>
+    <option value="BCOM">BCOM</option>
+    <option value="BBA">BBA</option>
+    <option value="BBM">BBM</option>
+
+  <option value="CYCLE">CYCLE</option>
+  <option value="BIKE">BIKE</option>
+  <option value="CAR">CAR</option>
+
+  <option value="STATIONARY">STATIONERY</option>
+
+</select>
+      
+      
+      
+      </div>
+    <div class="form-group">
+      <label for="text">Description:</label>
+      <input type="text" class="form-control" name="disp" id="description" placeholder="Enter product Description">
+    </div>
+    <div class="form-group">
+    <input type="hidden" name="MAX_FILE_SIZE" value="30000">
+	Upload Photo: <input name="userfile" type="file">
+    </div>
+    <br>
+    <br>
+    <button type="submit" class="btn btn-success">Submit</button>
+ </form>
+</div>
+
+</body></html>

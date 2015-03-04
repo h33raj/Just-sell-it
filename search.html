@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="books.css">	
+</head>
+<style>
+body {
+    background-color: #90EE90;
+}
+
+h1{
+    color: #000000;
+    text-align: center;
+    font-weight:bold;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $('#c').fadeOut(1000);
+    $("b").click(function(){
+     $("c").slideDown();	
+	});
+    });
+});
+</script>
+</script> </head>
+<body>
+<a href="main.html">
+    <img src="img/back.png" style="float:left;" height="50" width="50">
+  </a>
+
+<br>
+<br>
+<form method="post" action="search.php" class="navbar-form pull-left form-search">
+
+
+<div class="input-append" align='center'>
+  <i class="icon-zoom-in"></i>
+        <input data-provide="typeahead" data-items="4"  type="text" 
+           class="span2 search-query" style="text-align:center"	>
+        <button class="btn">Search</button>
+    </div>
+  </form>
+  <br>
+  </div>
+</form>
+</body>
+</html>
+

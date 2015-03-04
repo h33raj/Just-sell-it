@@ -1,0 +1,22 @@
+.main {
+    
+}
+
+#book {
+    position: relative;
+    left: -20px;
+}
+
+#station {
+    position: relative;
+    left: 20px;
+}
+
+#vehicle {
+    
+}
+
+#postadd {
+
+    
+}

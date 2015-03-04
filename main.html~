@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>
+Sell-it
+</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+        <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<div class="main" align="center">
+<div id="head" align="center">
+<br>
+<form action="main.html" style="text-align:left">
+<input type="image" src="img/sell_it.jpg" alt="Submit" height="170" width="170">
+</form>
+<h1>
+<center>Sell-it
+<center></h1>
+<br>
+<br>
+</div>
+<div id="book" align="center">
+<form action="book.html" style="text-align:left">
+<input type="image" src="img/120.jpg" alt="Submit" height="170" width="170">
+</form>
+</div>
+<div id="station" align="center">
+<form action="station.html" style="text-align:right">
+<input type="image" src="img/station.jpg" alt="Submit" height="170" width="170">
+</form>
+</div>
+<br>
+<div id="vehicle" align="center">
+<form action="vehicle.html" style="text-align:left">
+<input type="image" src="img/vehicle.png" alt="Submit" height="170" width="170">
+</form>
+</div id="postadd" align="center">
+<form action="post_ad.html" style="text-align:right">
+<input type="image" src="img/post.png" alt="Submit" height="170" width="170">
+</form>
+</div>
+<br>
+<br>
+
+</div>
+</body>
+</html>

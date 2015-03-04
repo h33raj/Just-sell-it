@@ -1,0 +1,32 @@
+$(document).ready(function() {
+   $('div').mouseenter(function() {
+       $(this).animate({
+           height: '+=10px'
+       });
+   });
+   $('div').mouseleave(function() {
+       $(this).animate({
+           height: '-=10px'
+       }); 
+   });
+   $('div').click(function() {
+       $(this).toggle(1000);
+   }); 
+
+$("#select_1").on('change',function(){
+    if($("#select_1").prop("selectedIndex")==1){
+	$('#select_3 option').show(); 
+	$('#select_3 option:gt(8)').hide(); 
+	
+    }else if($("#select_1").prop("selectedIndex")==2){
+	$('#select_3 option').show(); 
+	$('#select_3 option:lt(9)').hide();   
+	$('#select_3 option:gt(11)').hide();   
+    }else if($("#select_1").prop("selectedIndex")==3){
+	$('#select_3 option').show(); 
+	$('#select_3 option:lt(12)').hide();   
+	$('#select_3 option:gt(12)').show();
+    }
+});
+    
+});
